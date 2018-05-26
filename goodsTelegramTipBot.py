@@ -19,10 +19,10 @@ import time
 
 ''' begin configuration section '''
 
-BOTNAME  = 'Goods-Tip'
-TOKEN    = '614479722:AAFBc69msJ2BIfaBWKgZ20SsPlCjYxYKsnQ'
+BOTNAME  = 'Goods Tip'
+TOKEN    = '514826426:AAGmEP7B3H4X7uEQiL4GyKEUIyoQqgQCW48'
 LOG_FILE = '/tmp/goods.log'
-DB_FILE  = '/opt/goodsTipBot/pickledb.py'
+DB_FILE  = '/opt/goodsTipBot/pickledb'
 APP_EXE  = '/root/goods_linux64-binary/goods-cli'
 
 ''' end configuration section '''
@@ -449,7 +449,7 @@ def isValidAddress(param):
         return False
     elif not param.isalnum():
         return False
-    elif not param[0] == 'F':
+    elif not param[0] == 'G':
         return False
     else:
         return True
